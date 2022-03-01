@@ -388,6 +388,13 @@ h2#item-description__what-will-you-get {
     font-weight: normal;
     vertical-align: top;
 }
+.mt-currency {
+    margin-right: 0.05em;
+    font-size: 12px;
+    line-height: 2.25em;
+    font-weight: normal;
+    vertical-align: top;
+}
 
 .purchase-form__upgrade {
     display: flex;
