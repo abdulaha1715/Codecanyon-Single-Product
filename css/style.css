@@ -1,168 +1,124 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+  Name - Codecanyon Single Item
+  Author: abdulahaislam210917@gmail.com
+  Support: abdulahaislam210917@gmail.com
+  Description: HTML5 template.
+  Version: 1.0
+*/
 
-/* ==========================================================================
-   Base styles: Fonts loading
-   ========================================================================== */
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+*/
 
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* 1. Theme default css */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: 'Montserrat', sans-serif;
+ body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
 }
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.f-left {
+    float: left
 }
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+.f-right {
+    float: right
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+.fixed {
+    position: fixed;
 }
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    color: #2B96CC;
+    text-decoration: none;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+a,
+button {
+    color: #1696e7;
+    outline: medium none;
 }
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+    text-transform: uppercase;
 }
+.capitalize {
+    text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    /*color: inherit;*/
+}
+/*h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}*/
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    list-style: none;
+}
+p {
+    color: #7e7e7e;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
 }
 
 /*
  * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
  */
 
 .clearfix::before,
@@ -185,6 +141,7 @@ a:link,
 a:hover,
 a:active,
 a:visited {text-decoration: none;}
+
 p {
     line-height: 28px;
     font-size: 16px;
@@ -204,21 +161,151 @@ ul, ol, li {
 
 
 
+/* 2. Header */
+
+header {
+    background: #FAFAFA;
+    padding: 20px 0;
+    border-bottom: 1px solid#ddd;
+}
+
+.item-header__title h1 {
+    font-size: 28px;
+    line-height: 34px;
+    color: #454545;
+    font-weight: 700;
+}
 
 
+/*  */
 
+.main-content {
+    margin-top: 20px;
+}
 
+.content-wrapper {}
 
+.item-preview {
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #FAFAFA;
+    border-radius: 5px;
+}
 
+.item-preview img {
+    width: 100%;
+}
 
+.btn-icon:after {
+    content: "";
+    position: absolute;
+    height: 17px;
+    float: right;
+    margin: 3px 0 0 8px;
+    width: 17px;
+}
 
+.btn-icon.live-preview:after {
+    background-image: url(https://public-assets.envato-static.com/assets/generated_sprites/common-14f8bc60470b39265fe5c01e92035209bd04b91cd7da99d59ca3ccd9de5eac62.png);
+    background-position: 0px -137px;
+}
 
+a.btn-icon.live-preview {
+    width: auto !important;
+    position: relative;
+    text-align: center !important;
+    background: #0084B4;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 6px 45px 5px 22px;
+    line-height: 1.5;
+}
 
+.item-preview__preview-buttons {
+    text-align: center;
+    margin-top: 12px;
+}
 
+.item-preview-actions {
+    padding-top: 12px;
+}
 
+.item-description {
+    margin-top: 35px;
+    padding-bottom: 0;
+}
 
+.item-description h2 {
+    color: #545454;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+}
 
+.item-description h2:last-child {
+    border: none;
+}
 
+.item-description img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.item-description p {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+pre {
+    background-color: whitesmoke;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U2ZTZlNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
+    background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+    background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+    background-size: 38px 38px;
+    border: 1px solid #d4d4d4;
+    display: block;
+    line-height: 19px;
+    margin-bottom: 10px;
+    overflow: visible;
+    overflow-y: hidden;
+    padding: 0 0 0 4px;
+}
+code, pre {
+    color: #333333;
+    font-size: 11px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.item-description pre {
+    margin-bottom: 30px;
+}
+
+.item-description h3 {
+    border-bottom: 1px solid #d4d4d4;
+    font-size: 18px;
+    line-height: 27px;
+    color: #545454;
+    padding-bottom: 10px;
+}
+
+.item-description ul {
+    margin: 20px 30px;
+}
+
+.item-description ul li {
+    list-style: disc;
+}
+
+h2#item-description__what-will-you-get {
+    font-weight: 500;
+}
 
 
 
